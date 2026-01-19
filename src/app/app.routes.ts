@@ -1,14 +1,22 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
+import { LoginComponent } from './features/login/login.component';
+import { articlesGuardGuard } from './core/guards/articles-guard.guard';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'articles',
+    title: 'Articles',
     component: LayoutComponent,
-    children: [
-      // Your feature routes here
-      { path: '', redirectTo: 'articles', pathMatch: 'full' },
-      // Add your article, admin routes etc.
-    ],
+    canActivate: [articlesGuardGuard]
+  },
+  {
+    path: 'login',
+    title: 'Login',
+    component: LoginComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/articles'
   },
 ];
