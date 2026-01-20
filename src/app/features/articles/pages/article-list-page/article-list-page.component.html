@@ -1,0 +1,23 @@
+<div class="login-container">
+    <h2>Article List Page</h2>
+
+    <div class="countries-panel">
+        <h3>Countries List</h3>
+
+        <div *ngIf="loading" class="loading">
+            Loading countries...
+        </div>
+
+        <div *ngIf="error" class="error">
+            {{ error }}
+        </div>
+
+        <div *ngIf="!loading && !error" class="countries-list">
+            <ul>
+                <li *ngFor="let country of countries">
+                    {{ country.name || country }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
