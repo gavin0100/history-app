@@ -1,1 +1,79 @@
-<p>sidebar works!</p>
+<p-drawer [(visible)]="visible" position="left">
+    <ng-template #headless let-drawerRef>
+        <div class="flex flex-col h-full">
+            <!-- Drawer Header -->
+            <div class="flex items-center justify-between px-6 pt-4 pb-4 shrink-0 border-b border-gray-200">
+                <span class="inline-flex items-center gap-2">
+                    <i class="pi pi-history text-2xl text-primary"></i>
+                    <span class="font-semibold text-2xl text-primary">History App</span>
+                </span>
+                <p-button 
+                    type="button" 
+                    (click)="visible.set(false)" 
+                    icon="pi pi-times" 
+                    [rounded]="true" 
+                    [outlined]="true" 
+                    styleClass="h-8 w-8">
+                </p-button>
+            </div>
+
+            <!-- Drawer Content -->
+            <div class="overflow-y-auto flex-1">
+                <ul class="list-none p-4 m-0">
+                    @for (section of menuItems; track section.label) {
+                        <li>
+                            <!-- Section Header -->
+                            <div
+                                pRipple
+                                pStyleClass="@next"
+                                enterFromClass="hidden"
+                                enterActiveClass="animate-slidedown"
+                                leaveToClass="hidden"
+                                leaveActiveClass="animate-slideup"
+                                class="p-4 flex items-center justify-between text-gray-600 dark:text-gray-200 cursor-pointer">
+                                <span class="font-medium">{{ section.label }}</span>
+                                <i class="pi pi-chevron-down"></i>
+                            </div>
+                            
+                            <!-- Section Items -->
+                            <ul class="list-none p-0 m-0 overflow-hidden">
+                                @for (item of section.items; track item.label) {
+                                    <li>
+                                        <a 
+                                            pRipple 
+                                            [href]="item.link"
+                                            class="flex items-center cursor-pointer p-4 rounded text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 duration-150 transition-colors">
+                                            <i [class]="item.icon + ' mr-2'"></i>
+                                            <span class="font-medium">{{ item.label }}</span>
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+            <!-- Drawer Footer -->
+            <div class="mt-auto p-4 border-t border-gray-200">
+                <div class="flex flex-col gap-2">
+                    <button 
+                        pButton 
+                        label="Account" 
+                        icon="pi pi-user" 
+                        class="w-full" 
+                        [outlined]="true">
+                    </button>
+                    <button 
+                        pButton 
+                        label="Logout" 
+                        icon="pi pi-sign-out" 
+                        class="w-full" 
+                        severity="danger" 
+                        [text]="true">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-drawer>

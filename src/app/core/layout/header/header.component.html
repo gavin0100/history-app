@@ -1,1 +1,35 @@
-<p>header works!</p>
+<header class="bg-white shadow-md px-6 py-3">
+    <div class="flex items-center justify-between">
+        <!-- Left side: Menu button and Breadcrumb -->
+        <div class="flex items-center gap-4">
+            <p-button 
+                (click)="onMenuClick()" 
+                icon="pi pi-bars" 
+                [text]="true" 
+                [rounded]="true"
+                severity="secondary">
+            </p-button>
+            
+            <p-breadcrumb 
+                [model]="breadcrumbItems" 
+                [home]="home">
+            </p-breadcrumb>
+        </div>
+
+        <!-- Right side: Optional actions -->
+        <div class="flex items-center gap-2">
+            <p-button 
+                icon="pi pi-bell" 
+                [text]="true" 
+                [rounded]="true"
+                severity="secondary">
+            </p-button>
+            <p-button 
+                icon="pi pi-user" 
+                [text]="true" 
+                [rounded]="true"
+                severity="secondary">
+            </p-button>
+        </div>
+    </div>
+</header>

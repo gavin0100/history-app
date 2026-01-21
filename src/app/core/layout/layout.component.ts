@@ -12,5 +12,9 @@ import { ArticleListPageComponent } from '../../features/articles/pages/article-
   styleUrl: './layout.component.scss'
 })
 export class LayoutComponent {
+  sidebarVisible = false;
 
+  toggleSidebar() {
+    this.sidebarVisible = !this.sidebarVisible;
+  }
 }
