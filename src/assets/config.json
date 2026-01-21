@@ -1,3 +1,9 @@
 {
-    "apiHost": "https://geoapi.info"
+    "apiHost": "https://geoapi.info",
+    "apiEndpoints": {
+        "countries": {
+            "list": "/api/countries",
+            "search": "/api/countries/search"
+        }
+    }
 }

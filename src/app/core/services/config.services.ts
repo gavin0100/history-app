@@ -24,4 +24,8 @@ export class ConfigService {
     getApiHost(): string {
         return this.config?.apiHost || '';
     }
+
+    getApiEndpoint(category: string, action: string): string {
+        return this.config?.apiEndpoints?.[category]?.[action] || '';
+    }
 }
