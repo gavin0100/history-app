@@ -11,7 +11,7 @@ import { MenuItem } from 'primeng/api';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  toggleSidebar = output<void>();
+  toggleClick = output<void>();
 
   breadcrumbItems: MenuItem[] = [
     { label: 'Home', icon: 'pi pi-home', routerLink: '/' },
@@ -22,6 +22,6 @@ export class HeaderComponent {
   home: MenuItem = { icon: 'pi pi-home', routerLink: '/' };
 
   onMenuClick() {
-    this.toggleSidebar.emit();
+    this.toggleClick.emit();
   }
 }
