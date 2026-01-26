@@ -1,0 +1,18 @@
+<div class="min-h-screen flex flex-col bg-gray-50">
+    <!-- Header -->
+    <app-header class="fixed top-0 left-0 right-0 z-50"></app-header>
+
+    <!-- Main Content Area -->
+    <div class="flex flex-1 pt-16">
+        <!-- Sidebar -->
+        <app-sidebar class="fixed left-0 top-16 bottom-0 w-72 overflow-y-auto"></app-sidebar>
+
+        <!-- Main Content -->
+        <main class="flex-1 ml-72 p-6">
+            <app-article-list-page></app-article-list-page>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <app-footer class="ml-72"></app-footer>
+</div>
