@@ -46,7 +46,7 @@
                     @for (path of selectedPaths(); track $index) {
                     <div
                         class="flex items-start gap-2 p-2 bg-gray-50 rounded border border-gray-200 hover:border-blue-300 transition-colors">
-                        <span class="text-xs flex-1 leading-relaxed break-words min-w-0">{{ getPathDisplayText(path) }} aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</span>
+                        <span class="text-xs flex-1 leading-relaxed break-words min-w-0">{{ getPathDisplayText(path) }}</span>
                         <button pButton (click)="removeSelectedPath($index)" icon="pi pi-times" [text]="true"
                             [rounded]="true" size="small" severity="danger" class="h-6 w-6 flex-shrink-0"
                             pTooltip="Remove" tooltipPosition="left">

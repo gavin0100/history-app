@@ -28,4 +28,8 @@ export class ConfigService {
     getApiEndpoint(category: string, action: string): string {
         return this.config?.apiEndpoints?.[category]?.[action] || '';
     }
+
+    getMaxSelectedPaths(): number {
+        return this.config?.maxSelectedPaths || 3; // Default to 3 if not configured
+    }
 }

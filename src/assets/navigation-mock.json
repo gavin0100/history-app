@@ -3,7 +3,7 @@
     "lastUpdated": "2026-01-25T00:00:00Z",
     "countries": [
         {
-            "id": "vn",
+            "id": "8e94302f",
             "name": "Việt Nam",
             "code": "VN",
             "slug": "viet-nam",
@@ -11,34 +11,34 @@
             "articleCount": 150,
             "industries": [
                 {
-                    "id": "agriculture",
+                    "id": "72cfda31",
                     "name": "Nông nghiệp",
                     "slug": "nong-nghiep",
                     "icon": "pi pi-sun",
                     "articleCount": 80,
                     "subIndustries": [
                         {
-                            "id": "livestock",
+                            "id": "0f5eb3ff",
                             "name": "Chăn nuôi",
                             "slug": "chan-nuoi",
                             "articleCount": 40,
                             "timeRanges": [
                                 {
-                                    "id": "vn-agri-livestock-1945-1950",
+                                    "id": "327da3a8",
                                     "label": "1945-1950",
                                     "startYear": 1945,
                                     "endYear": 1950,
                                     "articleCount": 12
                                 },
                                 {
-                                    "id": "vn-agri-livestock-1950-1960",
+                                    "id": "850bd33c",
                                     "label": "1950-1960",
                                     "startYear": 1950,
                                     "endYear": 1960,
                                     "articleCount": 15
                                 },
                                 {
-                                    "id": "vn-agri-livestock-2010-2020",
+                                    "id": "4f3f7d99",
                                     "label": "2010-2020",
                                     "startYear": 2010,
                                     "endYear": 2020,
@@ -47,20 +47,20 @@
                             ]
                         },
                         {
-                            "id": "crop-farming",
+                            "id": "3ffe4e17",
                             "name": "Trồng trọt",
                             "slug": "trong-trot",
                             "articleCount": 40,
                             "timeRanges": [
                                 {
-                                    "id": "vn-agri-crop-1945-1954",
+                                    "id": "5b940c43",
                                     "label": "1945-1954",
                                     "startYear": 1945,
                                     "endYear": 1954,
                                     "articleCount": 18
                                 },
                                 {
-                                    "id": "vn-agri-crop-2015-2020",
+                                    "id": "a5a4a88a",
                                     "label": "2015-2020",
                                     "startYear": 2015,
                                     "endYear": 2020,
@@ -71,27 +71,27 @@
                     ]
                 },
                 {
-                    "id": "industry",
+                    "id": "b2cc5954",
                     "name": "Công nghiệp",
                     "slug": "cong-nghiep",
                     "icon": "pi pi-building",
                     "articleCount": 70,
                     "subIndustries": [
                         {
-                            "id": "textile",
+                            "id": "0e5effe5",
                             "name": "Dệt may",
                             "slug": "det-may",
                             "articleCount": 35,
                             "timeRanges": [
                                 {
-                                    "id": "vn-ind-textile-1960-1970",
+                                    "id": "32d68e95",
                                     "label": "1960-1970",
                                     "startYear": 1960,
                                     "endYear": 1970,
                                     "articleCount": 15
                                 },
                                 {
-                                    "id": "vn-ind-textile-2000-2010",
+                                    "id": "c71e235d",
                                     "label": "2000-2010",
                                     "startYear": 2000,
                                     "endYear": 2010,
@@ -100,20 +100,20 @@
                             ]
                         },
                         {
-                            "id": "manufacturing",
+                            "id": "8aebcae7",
                             "name": "Sản xuất",
                             "slug": "san-xuat",
                             "articleCount": 35,
                             "timeRanges": [
                                 {
-                                    "id": "vn-ind-manu-1975-1985",
+                                    "id": "660d2e00",
                                     "label": "1975-1985",
                                     "startYear": 1975,
                                     "endYear": 1985,
                                     "articleCount": 20
                                 },
                                 {
-                                    "id": "vn-ind-manu-2010-2020",
+                                    "id": "41314559",
                                     "label": "2010-2020",
                                     "startYear": 2010,
                                     "endYear": 2020,
@@ -126,7 +126,7 @@
             ]
         },
         {
-            "id": "us",
+            "id": "c9457abe",
             "name": "America",
             "code": "US",
             "slug": "america",
@@ -134,27 +134,27 @@
             "articleCount": 200,
             "industries": [
                 {
-                    "id": "metallurgical",
+                    "id": "273d87fa",
                     "name": "Metallurgical Industry",
                     "slug": "metallurgical-industry",
                     "icon": "pi pi-wrench",
                     "articleCount": 90,
                     "subIndustries": [
                         {
-                            "id": "steel-production",
+                            "id": "e736039f",
                             "name": "Steel Production",
                             "slug": "steel-production",
                             "articleCount": 50,
                             "timeRanges": [
                                 {
-                                    "id": "us-metal-steel-1960-1970",
+                                    "id": "15b8d1ae",
                                     "label": "1960-1970",
                                     "startYear": 1960,
                                     "endYear": 1970,
                                     "articleCount": 25
                                 },
                                 {
-                                    "id": "us-metal-steel-1970-1980",
+                                    "id": "31888497",
                                     "label": "1970-1980",
                                     "startYear": 1970,
                                     "endYear": 1980,
@@ -163,20 +163,20 @@
                             ]
                         },
                         {
-                            "id": "aluminum-production",
+                            "id": "93587bfb",
                             "name": "Aluminum Production",
                             "slug": "aluminum-production",
                             "articleCount": 40,
                             "timeRanges": [
                                 {
-                                    "id": "us-metal-aluminum-1950-1960",
+                                    "id": "36e729c6",
                                     "label": "1950-1960",
                                     "startYear": 1950,
                                     "endYear": 1960,
                                     "articleCount": 20
                                 },
                                 {
-                                    "id": "us-metal-aluminum-1990-2000",
+                                    "id": "cac0de01",
                                     "label": "1990-2000",
                                     "startYear": 1990,
                                     "endYear": 2000,
@@ -187,27 +187,27 @@
                     ]
                 },
                 {
-                    "id": "technology",
+                    "id": "12f39035",
                     "name": "Technology",
                     "slug": "technology",
                     "icon": "pi pi-desktop",
                     "articleCount": 110,
                     "subIndustries": [
                         {
-                            "id": "software",
+                            "id": "7a2f5c4c",
                             "name": "Software Development",
                             "slug": "software-development",
                             "articleCount": 60,
                             "timeRanges": [
                                 {
-                                    "id": "us-tech-software-1990-2000",
+                                    "id": "6ef6fb6e",
                                     "label": "1990-2000",
                                     "startYear": 1990,
                                     "endYear": 2000,
                                     "articleCount": 30
                                 },
                                 {
-                                    "id": "us-tech-software-2000-2010",
+                                    "id": "eaf9dbd7",
                                     "label": "2000-2010",
                                     "startYear": 2000,
                                     "endYear": 2010,
@@ -216,20 +216,20 @@
                             ]
                         },
                         {
-                            "id": "hardware",
+                            "id": "59cca8f6",
                             "name": "Hardware Manufacturing",
                             "slug": "hardware-manufacturing",
                             "articleCount": 50,
                             "timeRanges": [
                                 {
-                                    "id": "us-tech-hardware-1980-1990",
+                                    "id": "d406fd79",
                                     "label": "1980-1990",
                                     "startYear": 1980,
                                     "endYear": 1990,
                                     "articleCount": 25
                                 },
                                 {
-                                    "id": "us-tech-hardware-2000-2010",
+                                    "id": "395e5607",
                                     "label": "2000-2010",
                                     "startYear": 2000,
                                     "endYear": 2010,
@@ -242,7 +242,7 @@
             ]
         },
         {
-            "id": "jp",
+            "id": "c6f64933",
             "name": "Japan",
             "code": "JP",
             "slug": "japan",
@@ -250,27 +250,27 @@
             "articleCount": 180,
             "industries": [
                 {
-                    "id": "automotive",
+                    "id": "20cf6cd7",
                     "name": "Automotive Industry",
                     "slug": "automotive-industry",
                     "icon": "pi pi-car",
                     "articleCount": 100,
                     "subIndustries": [
                         {
-                            "id": "car-manufacturing",
+                            "id": "34804941",
                             "name": "Car Manufacturing",
                             "slug": "car-manufacturing",
                             "articleCount": 60,
                             "timeRanges": [
                                 {
-                                    "id": "jp-auto-car-1970-1980",
+                                    "id": "449d9508",
                                     "label": "1970-1980",
                                     "startYear": 1970,
                                     "endYear": 1980,
                                     "articleCount": 30
                                 },
                                 {
-                                    "id": "jp-auto-car-1990-2000",
+                                    "id": "031f4d4e",
                                     "label": "1990-2000",
                                     "startYear": 1990,
                                     "endYear": 2000,
@@ -279,20 +279,20 @@
                             ]
                         },
                         {
-                            "id": "motorcycle-production",
+                            "id": "1924cd2d",
                             "name": "Motorcycle Production",
                             "slug": "motorcycle-production",
                             "articleCount": 40,
                             "timeRanges": [
                                 {
-                                    "id": "jp-auto-moto-1960-1970",
+                                    "id": "3fedf7a6",
                                     "label": "1960-1970",
                                     "startYear": 1960,
                                     "endYear": 1970,
                                     "articleCount": 20
                                 },
                                 {
-                                    "id": "jp-auto-moto-1980-1990",
+                                    "id": "6e699764",
                                     "label": "1980-1990",
                                     "startYear": 1980,
                                     "endYear": 1990,
@@ -303,27 +303,27 @@
                     ]
                 },
                 {
-                    "id": "electronics",
+                    "id": "c8e4d46f",
                     "name": "Electronics",
                     "slug": "electronics",
                     "icon": "pi pi-mobile",
                     "articleCount": 80,
                     "subIndustries": [
                         {
-                            "id": "consumer-electronics",
+                            "id": "f7477d00",
                             "name": "Consumer Electronics",
                             "slug": "consumer-electronics",
                             "articleCount": 50,
                             "timeRanges": [
                                 {
-                                    "id": "jp-elec-consumer-1980-1990",
+                                    "id": "d288bd0a",
                                     "label": "1980-1990",
                                     "startYear": 1980,
                                     "endYear": 1990,
                                     "articleCount": 25
                                 },
                                 {
-                                    "id": "jp-elec-consumer-2000-2010",
+                                    "id": "46310d5e",
                                     "label": "2000-2010",
                                     "startYear": 2000,
                                     "endYear": 2010,

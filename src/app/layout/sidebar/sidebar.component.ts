@@ -21,8 +21,9 @@ import {
   NavigationTree
 } from '../../core/models/navigation.model';
 import { HttpClient } from '@angular/common/http';
-import { switchMap } from 'rxjs';
+import { of, switchMap } from 'rxjs';
 import { transformNames$ } from '@app/core/utils/transform.utils';
+import { ConfigService } from '@app/core/services/config.services';
 
 @Component({
   selector: 'app-sidebar',
@@ -47,6 +48,7 @@ import { transformNames$ } from '@app/core/utils/transform.utils';
 export class SidebarComponent implements OnInit {
   private http = inject(HttpClient);
   private messageService = inject(MessageService);
+  private configService = inject(ConfigService);
 
   ngOnInit(): void {
     this.loadNavigationData();
@@ -72,7 +74,7 @@ export class SidebarComponent implements OnInit {
       .pipe(
         switchMap(navTree => {
           // Transform country names
-          return transformNames$(navTree.countries).pipe(
+          return of(navTree.countries).pipe(
             switchMap(transformedCountries => {
               // Extract only country-level data
               const countriesOnly: Country[] = transformedCountries.map(country => ({
@@ -87,7 +89,7 @@ export class SidebarComponent implements OnInit {
                 isLoading: false
               }));
 
-              return transformNames$(countriesOnly);
+              return of(countriesOnly);
             })
           );
         })
@@ -95,7 +97,6 @@ export class SidebarComponent implements OnInit {
       .subscribe({
         next: (countries) => {
           this.countries.set(countries);
-          console.log('Navigation data loaded and transformed:', countries);
         },
         error: (error) => {
           console.error('Error loading navigation data:', error);
@@ -103,13 +104,6 @@ export class SidebarComponent implements OnInit {
           this.countries.set([]);
         }
       });
-  }
-
-  private transformSingleName(name: string): string {
-    const upperName = name.toUpperCase();
-    return upperName.includes('123')
-      ? upperName.replaceAll('123', '456')
-      : upperName + '123';
   }
 
   /**
@@ -152,12 +146,13 @@ export class SidebarComponent implements OnInit {
       // Remove if already selected
       currentPaths.splice(existingIndex, 1);
     } else {
-      // Check if we've reached the maximum of 3 paths
-      if (currentPaths.length >= 3) {
+      // Check if we've reached the maximum of n paths that is configured
+      const maxPaths = this.configService.getMaxSelectedPaths();
+      if (currentPaths.length >= maxPaths) {
         this.messageService.add({
-          severity: 'warn',
-          summary: 'Selection Limit Reached',
-          detail: 'You can only select up to 3 filters at a time. Please remove one to add another.',
+          severity: "warn",
+          summary: "Selection Limit Reached",
+          detail: `You can only select up to ${maxPaths} filters at a time. Please remove one to add another.`,
           life: 2000
         });
         return;
@@ -241,7 +236,7 @@ export class SidebarComponent implements OnInit {
             // Extract industries without nested data
             country.industries = fullCountry.industries.map(industry => ({
               id: industry.id,
-              name: this.transformSingleName(industry.name),
+              name: industry.name.toUpperCase(),
               slug: industry.slug,
               icon: industry.icon,
               articleCount: industry.articleCount,
@@ -287,7 +282,7 @@ export class SidebarComponent implements OnInit {
             // Extract sub-industries without time ranges
             industry.subIndustries = fullIndustry.subIndustries.map(subIndustry => ({
               id: subIndustry.id,
-              name: this.transformSingleName(subIndustry.name),
+              name: subIndustry.name.toUpperCase(),
               slug: subIndustry.slug,
               icon: subIndustry.icon,
               articleCount: subIndustry.articleCount,

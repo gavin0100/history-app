@@ -5,5 +5,6 @@
             "list": "/api/countries",
             "search": "/api/countries/search"
         }
-    }
+    },
+    "maxSelectedPaths": 3
 }

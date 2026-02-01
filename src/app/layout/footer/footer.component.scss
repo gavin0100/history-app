@@ -1,0 +1,56 @@
+footer {
+
+    // Smooth animations
+    .footer-content {
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    // Hover effect for links
+    a {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    // Toggle button hover effect
+    button {
+        &:hover svg {
+            transform: translateY(-2px);
+        }
+    }
+
+    // Newsletter input focus animation
+    input[type="email"] {
+        &:focus {
+            transform: translateY(-2px);
+            transition: transform 0.2s ease;
+        }
+    }
+
+    // Social icons hover effect
+    svg {
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    // Animation for the chevron icon
+    .rotate-180 {
+        transform: rotate(180deg);
+    }
+}

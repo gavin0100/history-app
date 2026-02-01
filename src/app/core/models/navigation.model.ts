@@ -1,11 +1,11 @@
 /**
- * Hierarchical navigation structure:
- * Country → Industry → Sub-Industry → Time Range → Articles
- */
+* Hierarchical navigation structure:
+* Country → Industry → Sub-Industry → Time Range → Articles
+*/
 
 /**
- * Time range for articles
- */
+* Time range for articles
+*/
 export interface TimeRange {
     id: string;
     label: string;           // e.g., "1945-1950"
@@ -15,8 +15,8 @@ export interface TimeRange {
 }
 
 /**
- * Sub-Industry (e.g., Chicken Farming, Steel Production)
- */
+* Sub-Industry (e.g., Chicken Farming, Steel Production)
+*/
 export interface SubIndustry {
     id: string;
     name: string;
@@ -30,8 +30,8 @@ export interface SubIndustry {
 }
 
 /**
- * Industry (e.g., Livestock Industry, Metallurgical Industry)
- */
+* Industry (e.g., Livestock Industry, Metallurgical Industry)
+*/
 export interface Industry {
     id: string;
     name: string;
@@ -44,8 +44,8 @@ export interface Industry {
 }
 
 /**
- * Country (e.g., Vietnam, America)
- */
+* Country (e.g., Vietnam, America)
+*/
 export interface Country {
     id: string;
     name: string;
@@ -59,8 +59,8 @@ export interface Country {
 }
 
 /**
- * Complete navigation tree structure
- */
+* Complete navigation tree structure
+*/
 export interface NavigationTree {
     version: string;
     lastUpdated: string;
@@ -68,9 +68,9 @@ export interface NavigationTree {
 }
 
 /**
- * Single selected path in navigation
- * Represents: Country → Industry → Sub-Industry → Time Range
- */
+* Single selected path in navigation
+* Represents: Country → Industry → Sub-Industry → Time Range
+*/
 export interface NavigationPath {
     country: {
         id: string;
@@ -96,18 +96,18 @@ export interface NavigationPath {
 }
 
 /**
- * Multiple selected paths for filtering
- * User can select multiple combinations like:
- * - Vietnam → Livestock → Chicken Farming → 1945-1950
- * - America → Metallurgical → Steel Production → 1960-1970
- */
+* Multiple selected paths for filtering
+* User can select multiple combinations like:
+* - Vietnam → Livestock → Chicken Farming → 1945-1950
+* - America → Metallurgical → Steel Production → 1960-1970
+*/
 export interface NavigationSelection {
     selectedPaths: NavigationPath[];
 }
 
 /**
- * Breadcrumb item for showing navigation path
- */
+* Breadcrumb item for showing navigation path
+*/
 export interface BreadcrumbItem {
     label: string;
     level: 'country' | 'industry' | 'sub-industry' | 'time-range';
@@ -115,8 +115,8 @@ export interface BreadcrumbItem {
 }
 
 /**
- * Expanded state for navigation tree UI
- */
+* Expanded state for navigation tree UI
+*/
 export interface NavigationState {
     expandedCountries: Set<string>;      // Country IDs
     expandedIndustries: Set<string>;     // Industry IDs

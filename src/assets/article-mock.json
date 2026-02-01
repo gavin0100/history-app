@@ -1,0 +1,447 @@
+[
+    {
+        "id": "bf661f92",
+        "title": "Phát triển chăn nuôi lợn tại Việt Nam giai đoạn 1945-1950",
+        "slug": "phat-trien-chan-nuoi-lon-viet-nam-1945-1950",
+        "summary": "Nghiên cứu về sự phát triển của ngành chăn nuôi lợn tại Việt Nam trong giai đoạn đầu sau độc lập, với những thách thức và cơ hội trong bối cảnh khó khăn sau chiến tranh.",
+        "content": "Nội dung chi tiết về lịch sử phát triển ngành chăn nuôi lợn từ 1945-1950...",
+        "imageUrl": "https://picsum.photos/800/600?random=1",
+        "thumbnailUrl": "https://picsum.photos/400/300?random=1",
+        "author": {
+            "id": "be9ae774",
+            "name": "Nguyễn Văn A",
+            "avatar": "https://i.pravatar.cc/150?img=1",
+            "role": "Nghiên cứu viên lịch sử"
+        },
+        "stats": {
+            "likes": 245,
+            "comments": 18,
+            "views": 1520,
+            "shares": 42
+        },
+        "classification": {
+            "country": {
+                "id": "8e94302f",
+                "name": "Việt Nam",
+                "code": "VN",
+                "slug": "viet-nam"
+            },
+            "industry": {
+                "id": "72cfda31",
+                "name": "Nông nghiệp",
+                "slug": "nong-nghiep"
+            },
+            "subIndustry": {
+                "id": "0f5eb3ff",
+                "name": "Chăn nuôi",
+                "slug": "chan-nuoi"
+            },
+            "timeRange": {
+                "id": "327da3a8",
+                "label": "1945-1950",
+                "startYear": 1945,
+                "endYear": 1950
+            }
+        },
+        "publishedDate": "2026-01-15T08:30:00Z",
+        "createdDate": "2026-01-10T10:00:00Z",
+        "updatedDate": "2026-01-14T15:30:00Z",
+        "status": "published",
+        "tags": [
+            "chăn nuôi",
+            "nông nghiệp",
+            "lịch sử",
+            "Việt Nam",
+            "hậu chiến"
+        ]
+    },
+    {
+        "id": "1dcd1ed7",
+        "title": "The Rise of Steel Production in America 1960-1970",
+        "slug": "rise-steel-production-america-1960-1970",
+        "summary": "An in-depth analysis of the golden age of American steel production during the 1960s, examining technological advancements and market dominance.",
+        "content": "Detailed content about American steel industry development...",
+        "imageUrl": "https://picsum.photos/800/600?random=2",
+        "thumbnailUrl": "https://picsum.photos/400/300?random=2",
+        "author": {
+            "id": "1c465fd8",
+            "name": "John Smith",
+            "avatar": "https://i.pravatar.cc/150?img=2",
+            "role": "Industrial Historian"
+        },
+        "stats": {
+            "likes": 482,
+            "comments": 35,
+            "views": 3420,
+            "shares": 89
+        },
+        "classification": {
+            "country": {
+                "id": "c9457abe",
+                "name": "America",
+                "code": "US",
+                "slug": "america"
+            },
+            "industry": {
+                "id": "273d87fa",
+                "name": "Metallurgical Industry",
+                "slug": "metallurgical-industry"
+            },
+            "subIndustry": {
+                "id": "e736039f",
+                "name": "Steel Production",
+                "slug": "steel-production"
+            },
+            "timeRange": {
+                "id": "15b8d1ae",
+                "label": "1960-1970",
+                "startYear": 1960,
+                "endYear": 1970
+            }
+        },
+        "publishedDate": "2026-01-20T14:00:00Z",
+        "createdDate": "2026-01-15T09:00:00Z",
+        "updatedDate": "2026-01-19T16:45:00Z",
+        "status": "published",
+        "tags": [
+            "steel",
+            "manufacturing",
+            "industrial revolution",
+            "USA",
+            "1960s"
+        ]
+    },
+    {
+        "id": "2cb01626",
+        "title": "Toyota's Manufacturing Revolution 1970-1980",
+        "slug": "toyota-manufacturing-revolution-1970-1980",
+        "summary": "Exploring how Toyota's innovative manufacturing techniques transformed the automotive industry during the 1970s and established Japan as a global automotive leader.",
+        "content": "Full article about Toyota Production System and its impact...",
+        "imageUrl": "https://picsum.photos/800/600?random=3",
+        "thumbnailUrl": "https://picsum.photos/400/300?random=3",
+        "author": {
+            "id": "621b2f68",
+            "name": "田中太郎",
+            "avatar": "https://i.pravatar.cc/150?img=3",
+            "role": "Automotive Industry Expert"
+        },
+        "stats": {
+            "likes": 678,
+            "comments": 52,
+            "views": 5240,
+            "shares": 156
+        },
+        "classification": {
+            "country": {
+                "id": "c6f64933",
+                "name": "Japan",
+                "code": "JP",
+                "slug": "japan"
+            },
+            "industry": {
+                "id": "20cf6cd7",
+                "name": "Automotive Industry",
+                "slug": "automotive-industry"
+            },
+            "subIndustry": {
+                "id": "34804941",
+                "name": "Car Manufacturing",
+                "slug": "car-manufacturing"
+            },
+            "timeRange": {
+                "id": "449d9508",
+                "label": "1970-1980",
+                "startYear": 1970,
+                "endYear": 1980
+            }
+        },
+        "publishedDate": "2026-01-25T10:15:00Z",
+        "createdDate": "2026-01-18T11:30:00Z",
+        "updatedDate": "2026-01-24T14:20:00Z",
+        "status": "published",
+        "tags": [
+            "Toyota",
+            "lean manufacturing",
+            "automotive",
+            "Japan",
+            "innovation"
+        ]
+    },
+    {
+        "id": "48238c8d",
+        "title": "Cách mạng công nghiệp dệt may Việt Nam 1960-1970",
+        "slug": "cach-mang-cong-nghiep-det-may-viet-nam-1960-1970",
+        "summary": "Phân tích sự phát triển của ngành dệt may Việt Nam trong bối cảnh chiến tranh và sự cần thiết đáp ứng nhu cầu trong nước.",
+        "content": "Chi tiết về ngành dệt may Việt Nam giai đoạn 1960-1970...",
+        "imageUrl": "https://picsum.photos/800/600?random=4",
+        "thumbnailUrl": "https://picsum.photos/400/300?random=4",
+        "author": {
+            "id": "e65d2327",
+            "name": "Trần Thị B",
+            "avatar": "https://i.pravatar.cc/150?img=4",
+            "role": "Chuyên gia công nghiệp"
+        },
+        "stats": {
+            "likes": 156,
+            "comments": 12,
+            "views": 980,
+            "shares": 28
+        },
+        "classification": {
+            "country": {
+                "id": "8e94302f",
+                "name": "Việt Nam",
+                "code": "VN",
+                "slug": "viet-nam"
+            },
+            "industry": {
+                "id": "b2cc5954",
+                "name": "Công nghiệp",
+                "slug": "cong-nghiep"
+            },
+            "subIndustry": {
+                "id": "0e5effe5",
+                "name": "Dệt may",
+                "slug": "det-may"
+            },
+            "timeRange": {
+                "id": "32d68e95",
+                "label": "1960-1970",
+                "startYear": 1960,
+                "endYear": 1970
+            }
+        },
+        "publishedDate": "2026-01-28T09:00:00Z",
+        "createdDate": "2026-01-22T10:00:00Z",
+        "updatedDate": "2026-01-27T11:30:00Z",
+        "status": "published",
+        "tags": [
+            "dệt may",
+            "công nghiệp",
+            "Việt Nam",
+            "chiến tranh"
+        ]
+    },
+    {
+        "id": "0bd4223e",
+        "title": "The Silicon Valley Software Boom 1990-2000",
+        "slug": "silicon-valley-software-boom-1990-2000",
+        "summary": "Chronicles the explosive growth of the software industry in Silicon Valley during the 1990s, from the rise of Microsoft to the dot-com era.",
+        "content": "Comprehensive history of software development in the 90s...",
+        "imageUrl": "https://picsum.photos/800/600?random=5",
+        "thumbnailUrl": "https://picsum.photos/400/300?random=5",
+        "author": {
+            "id": "c787ff71",
+            "name": "Sarah Johnson",
+            "avatar": "https://i.pravatar.cc/150?img=5",
+            "role": "Tech Industry Analyst"
+        },
+        "stats": {
+            "likes": 892,
+            "comments": 67,
+            "views": 7850,
+            "shares": 234
+        },
+        "classification": {
+            "country": {
+                "id": "c9457abe",
+                "name": "America",
+                "code": "US",
+                "slug": "america"
+            },
+            "industry": {
+                "id": "12f39035",
+                "name": "Technology",
+                "slug": "technology"
+            },
+            "subIndustry": {
+                "id": "7a2f5c4c",
+                "name": "Software Development",
+                "slug": "software-development"
+            },
+            "timeRange": {
+                "id": "6ef6fb6e",
+                "label": "1990-2000",
+                "startYear": 1990,
+                "endYear": 2000
+            }
+        },
+        "publishedDate": "2026-02-01T13:45:00Z",
+        "createdDate": "2026-01-25T08:00:00Z",
+        "updatedDate": "2026-01-31T17:00:00Z",
+        "status": "published",
+        "tags": [
+            "software",
+            "Silicon Valley",
+            "dot-com",
+            "technology",
+            "1990s"
+        ]
+    },
+    {
+        "id": "7d374ab1",
+        "title": "Honda Motorcycle Dominance 1960-1970",
+        "slug": "honda-motorcycle-dominance-1960-1970",
+        "summary": "The story of Honda's rise to become the world's largest motorcycle manufacturer during the 1960s through innovation and global expansion.",
+        "content": "Detailed analysis of Honda's motorcycle strategy...",
+        "imageUrl": "https://picsum.photos/800/600?random=6",
+        "thumbnailUrl": "https://picsum.photos/400/300?random=6",
+        "author": {
+            "id": "bd4d3b1f",
+            "name": "佐藤花子",
+            "avatar": "https://i.pravatar.cc/150?img=6",
+            "role": "Motorcycle Industry Historian"
+        },
+        "stats": {
+            "likes": 534,
+            "comments": 41,
+            "views": 4120,
+            "shares": 98
+        },
+        "classification": {
+            "country": {
+                "id": "c6f64933",
+                "name": "Japan",
+                "code": "JP",
+                "slug": "japan"
+            },
+            "industry": {
+                "id": "20cf6cd7",
+                "name": "Automotive Industry",
+                "slug": "automotive-industry"
+            },
+            "subIndustry": {
+                "id": "1924cd2d",
+                "name": "Motorcycle Production",
+                "slug": "motorcycle-production"
+            },
+            "timeRange": {
+                "id": "3fedf7a6",
+                "label": "1960-1970",
+                "startYear": 1960,
+                "endYear": 1970
+            }
+        },
+        "publishedDate": "2026-02-02T11:20:00Z",
+        "createdDate": "2026-01-28T09:30:00Z",
+        "updatedDate": "2026-02-01T18:30:00Z",
+        "status": "published",
+        "tags": [
+            "Honda",
+            "motorcycle",
+            "Japan",
+            "manufacturing",
+            "global expansion"
+        ]
+    },
+    {
+        "id": "9eb815e2",
+        "title": "Cây lúa và sự phát triển trồng trọt 1945-1954",
+        "slug": "cay-lua-va-su-phat-trien-trong-trot-1945-1954",
+        "summary": "Nghiên cứu về vai trò của cây lúa trong nền kinh tế Việt Nam và các chính sách phát triển nông nghiệp trong giai đoạn kháng chiến.",
+        "imageUrl": "https://picsum.photos/800/600?random=7",
+        "thumbnailUrl": "https://picsum.photos/400/300?random=7",
+        "author": {
+            "id": "845fd206",
+            "name": "Lê Văn C",
+            "avatar": "https://i.pravatar.cc/150?img=7",
+            "role": "Nhà nghiên cứu nông nghiệp"
+        },
+        "stats": {
+            "likes": 198,
+            "comments": 15,
+            "views": 1240,
+            "shares": 34
+        },
+        "classification": {
+            "country": {
+                "id": "8e94302f",
+                "name": "Việt Nam",
+                "code": "VN",
+                "slug": "viet-nam"
+            },
+            "industry": {
+                "id": "72cfda31",
+                "name": "Nông nghiệp",
+                "slug": "nong-nghiep"
+            },
+            "subIndustry": {
+                "id": "3ffe4e17",
+                "name": "Trồng trọt",
+                "slug": "trong-trot"
+            },
+            "timeRange": {
+                "id": "5b940c43",
+                "label": "1945-1954",
+                "startYear": 1945,
+                "endYear": 1954
+            }
+        },
+        "publishedDate": "2026-01-18T07:30:00Z",
+        "createdDate": "2026-01-12T08:00:00Z",
+        "content": "Comprehensive study on rice cultivation development from 1945-1954...",
+        "updatedDate": "2026-01-17T16:45:00Z",
+        "status": "published",
+        "tags": [
+            "lúa",
+            "nông nghiệp",
+            "trồng trọt",
+            "kháng chiến"
+        ]
+    },
+    {
+        "id": "01d2f342",
+        "title": "Sony Walkman and Consumer Electronics 1980-1990",
+        "slug": "sony-walkman-consumer-electronics-1980-1990",
+        "summary": "How Sony's Walkman revolutionized personal audio and established Japan's dominance in consumer electronics during the 1980s.",
+        "imageUrl": "https://picsum.photos/800/600?random=8",
+        "thumbnailUrl": "https://picsum.photos/400/300?random=8",
+        "author": {
+            "id": "8a68da0d",
+            "name": "田中太郎",
+            "avatar": "https://i.pravatar.cc/150?img=3",
+            "role": "Automotive Industry Expert"
+        },
+        "stats": {
+            "likes": 756,
+            "comments": 48,
+            "views": 6230,
+            "shares": 187
+        },
+        "classification": {
+            "country": {
+                "id": "c6f64933",
+                "name": "Japan",
+                "code": "JP",
+                "slug": "japan"
+            },
+            "industry": {
+                "id": "c8e4d46f",
+                "name": "Electronics",
+                "slug": "electronics"
+            },
+            "subIndustry": {
+                "id": "f7477d00",
+                "name": "Consumer Electronics",
+                "slug": "consumer-electronics"
+            },
+            "timeRange": {
+                "id": "d288bd0a",
+                "label": "1980-1990",
+                "startYear": 1980,
+                "endYear": 1990
+            }
+        },
+        "publishedDate": "2026-01-30T15:00:00Z",
+        "createdDate": "2026-01-24T10:00:00Z",
+        "updatedDate": "2026-01-29T12:30:00Z",
+        "status": "published",
+        "tags": [
+            "Sony",
+            "Walkman",
+            "consumer electronics",
+            "Japan",
+            "innovation"
+        ]
+    }
+]
