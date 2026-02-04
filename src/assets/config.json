@@ -6,5 +6,5 @@
             "search": "/api/countries/search"
         }
     },
-    "maxSelectedPaths": 3
+    "maxSelectedPaths": 5
 }

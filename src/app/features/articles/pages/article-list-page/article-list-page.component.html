@@ -18,7 +18,7 @@
     @if (!isLoading() && articles().length > 0) {
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         @for (article of articles(); track article.id) {
-        <div
+        <div (click)="openArticleDetail(article)"
             class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
 
             <!-- Article Image -->
@@ -109,3 +109,6 @@
     </div>
     }
 </div>
+
+<app-article-detail-dialog [visible]="showDialog()" [article]="selectedArticle()" (visibleChange)="onDialogHide()">
+</app-article-detail-dialog>
