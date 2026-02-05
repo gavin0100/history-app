@@ -1,0 +1,177 @@
+<p-drawer [visible]="visible()" (visibleChange)="visibleChange.emit($event)" position="left" [style]="{width: '25rem'}">
+    <ng-template #headless let-drawerRef>
+        <p-toast position="top-center" [baseZIndex]="9999"></p-toast>
+        <div class="flex flex-col h-full">
+            <!-- Drawer Header -->
+            <div class="flex items-center justify-between px-6 pt-4 pb-4 shrink-0 border-b border-gray-200">
+                <span class="inline-flex items-center gap-2">
+                    <i class="pi pi-history text-2xl text-primary"></i>
+                    <span class="font-semibold text-2xl text-primary">History App</span>
+                </span>
+                <p-button type="button" (click)="applyFilters()" icon="pi pi-times" [rounded]="true"
+                    [outlined]="true" styleClass="h-8 w-8">
+                </p-button>
+            </div>
+
+            <!-- Selected Paths Display -->
+            <!-- Selected Filters Dropdown (Compact) -->
+            @if (selectedPaths().length > 0) {
+            <div class="px-4 py-3 bg-blue-50 border-b border-gray-200">
+                <div class="flex items-center justify-between cursor-pointer"
+                    (click)="selectedFiltersPopover.toggle($event)" (click)="togglePopover()">
+                    <div class="flex items-center gap-2">
+                        <i class="pi pi-filter text-blue-600"></i>
+                        <span class="text-sm font-semibold text-gray-700">
+                            Selected Filters
+                        </span>
+                        <p-badge [value]="selectedPaths().length" severity="info"></p-badge>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button pButton (click)="clearAllSelections(); $event.stopPropagation()" icon="pi pi-times"
+                            [text]="true" size="small" severity="secondary" pTooltip="Clear All" tooltipPosition="top">
+                        </button>
+                        <i class="pi pi-chevron-right text-gray-400 transition-transform duration-300"
+                                [class.rotate-90]="isShowPopover"></i>
+                    </div>
+                </div>
+            </div>
+            }
+
+            <!-- Popover for Selected Filters -->
+            <p-popover #selectedFiltersPopover>
+                <div class="flex flex-col gap-2" style="width: 350px; max-height: 300px; overflow-y: auto;">
+                    <div class="text-xs font-semibold text-gray-500 uppercase mb-1">
+                        Active Filters ({{ selectedPaths().length }}/3)
+                    </div>
+                    @for (path of selectedPaths(); track $index) {
+                    <div
+                        class="flex items-start gap-2 p-2 bg-gray-50 rounded border border-gray-200 hover:border-blue-300 transition-colors">
+                        <span class="text-xs flex-1 leading-relaxed break-words min-w-0">{{ getPathDisplayText(path) }} aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</span>
+                        <button pButton (click)="removeSelectedPath($index)" icon="pi pi-times" [text]="true"
+                            [rounded]="true" size="small" severity="danger" class="h-6 w-6 flex-shrink-0"
+                            pTooltip="Remove" tooltipPosition="left">
+                        </button>
+                    </div>
+                    }
+                </div>
+            </p-popover>
+
+            <!-- Navigation Tree -->
+            <div class="overflow-y-auto flex-1">
+                <div class="p-4">
+                    <h3 class="text-sm font-semibold text-gray-600 mb-3 uppercase">Browse by Location & Industry</h3>
+
+                    <!-- Countries -->
+                    @for (country of countries(); track country.id) {
+                    <div class="mb-4">
+                        <!-- Country Header -->
+                        <div pRipple (click)="toggleCountry(country)"
+                            class="flex items-center justify-between p-3 rounded cursor-pointer hover:bg-gray-100 transition-colors">
+                            <div class="flex items-center gap-2">
+                                <i [class]="country.icon || 'pi pi-flag'" class="text-blue-600"></i>
+                                <span class="font-semibold text-gray-800">{{ country.name }}</span>
+                                <p-badge [value]="country.articleCount ?? 0" severity="info"></p-badge>
+                                @if (country.isLoading) {
+                                <i class="pi pi-spin pi-spinner text-sm text-gray-400"></i>
+                                }
+                            </div>
+                            <i class="pi pi-chevron-right text-gray-400 transition-transform duration-300"
+                                [class.rotate-90]="isCountryExpanded(country.id)"></i>
+                        </div>
+
+                        <!-- Industries -->
+                        @if (isCountryExpanded(country.id) && country.industries && country.industries.length > 0) {
+                        <div class="ml-4 mt-2">
+                            @for (industry of country.industries; track industry.id) {
+                            <div class="mb-3">
+                                <!-- Industry Header -->
+                                <div pRipple (click)="toggleIndustry(country, industry)"
+                                    class="flex items-center justify-between p-2 rounded cursor-pointer hover:bg-gray-50 transition-colors">
+                                    <div class="flex items-center gap-2">
+                                        <i [class]="industry.icon || 'pi pi-briefcase'"
+                                            class="text-green-600 text-sm"></i>
+                                        <span class="font-medium text-gray-700 text-sm">{{ industry.name }}</span>
+                                        <p-badge [value]="industry.articleCount ?? 0" severity="success"
+                                            size="small"></p-badge>
+                                        @if (industry.isLoading) {
+                                        <i class="pi pi-spin pi-spinner text-xs text-gray-400"></i>
+                                        }
+                                    </div>
+                                    <i class="pi pi-chevron-right text-gray-400 text-xs transition-transform duration-300"
+                                        [class.rotate-90]="isIndustryExpanded(country.id, industry.id)"></i>
+                                </div>
+
+                                <!-- Sub-Industries -->
+                                @if (isIndustryExpanded(country.id, industry.id) && industry.subIndustries &&
+                                industry.subIndustries.length > 0) {
+                                <div class="ml-4 mt-2">
+                                    @for (subIndustry of industry.subIndustries; track subIndustry.id) {
+                                    <div class="mb-2">
+                                        <!-- Sub-Industry Header -->
+                                        <div pRipple (click)="toggleSubIndustry(country, industry, subIndustry)"
+                                            class="flex items-center justify-between p-2 rounded cursor-pointer hover:bg-gray-50 transition-colors">
+                                            <div class="flex items-center gap-2">
+                                                <i class="pi pi-circle text-orange-500 text-xs"></i>
+                                                <span class="text-gray-600 text-sm">{{ subIndustry.name }}</span>
+                                                <span class="text-xs text-gray-400">({{ subIndustry.articleCount
+                                                    }})</span>
+                                                @if (subIndustry.isLoading) {
+                                                <i class="pi pi-spin pi-spinner text-xs text-gray-400"></i>
+                                                }
+                                            </div>
+                                            <i class="pi pi-chevron-right text-gray-400 text-xs transition-transform duration-300"
+                                                [class.rotate-90]="isSubIndustryExpanded(country.id, industry.id, subIndustry.id)"></i>
+                                        </div>
+
+                                        <!-- Time Ranges -->
+                                        @if (isSubIndustryExpanded(country.id, industry.id, subIndustry.id) &&
+                                        subIndustry.timeRanges && subIndustry.timeRanges.length > 0) {
+                                        <div class="ml-4 mt-1 space-y-1">
+                                            @for (timeRange of subIndustry.timeRanges; track timeRange.id) {
+                                            <div pRipple
+                                                (click)="togglePathSelection(country, industry, subIndustry, timeRange)"
+                                                class="flex items-center justify-between p-2 rounded cursor-pointer transition-colors"
+                                                [class.bg-blue-100]="isPathSelected(country, industry, subIndustry, timeRange)"
+                                                [class.hover:bg-gray-50]="!isPathSelected(country, industry, subIndustry, timeRange)"
+                                                [class.hover:bg-blue-200]="isPathSelected(country, industry, subIndustry, timeRange)">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="pi text-xs"
+                                                        [class.pi-check-square]="isPathSelected(country, industry, subIndustry, timeRange)"
+                                                        [class.pi-stop]="!isPathSelected(country, industry, subIndustry, timeRange)"
+                                                        [class.text-blue-600]="isPathSelected(country, industry, subIndustry, timeRange)"
+                                                        [class.text-gray-400]="!isPathSelected(country, industry, subIndustry, timeRange)">
+                                                    </i>
+                                                    <span class="text-sm"
+                                                        [class.font-semibold]="isPathSelected(country, industry, subIndustry, timeRange)"
+                                                        [class.text-blue-700]="isPathSelected(country, industry, subIndustry, timeRange)"
+                                                        [class.text-gray-600]="!isPathSelected(country, industry, subIndustry, timeRange)">
+                                                        {{ timeRange.label }}
+                                                    </span>
+                                                </div>
+                                                <span class="text-xs text-gray-400">{{ timeRange.articleCount }}</span>
+                                            </div>
+                                            }
+                                        </div>
+                                        }
+                                    </div>
+                                    }
+                                </div>
+                                }
+                            </div>
+                            }
+                        </div>
+                        }
+                    </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Drawer Footer -->
+            <div class="mt-auto p-4 border-t border-gray-200">
+                <button pButton label="Apply Filters" icon="pi pi-filter" class="w-full"
+                    [disabled]="selectedPaths().length === 0" (click)="applyFilters()">
+                </button>
+            </div>
+        </div>
+    </ng-template>
+</p-drawer>

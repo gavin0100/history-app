@@ -1,0 +1,23 @@
+<div class="min-h-screen flex flex-col bg-gray-50">
+    <!-- Header -->
+    <app-header class="fixed top-0 left-0 right-0 z-50" (toggleClick)="toggleSidebar()">
+    </app-header>
+
+    <!-- Main Content Area -->
+    <div class="flex flex-1 pt-16">
+        <!-- Drawer Sidebar -->
+        <!-- [(visible)]="sidebarVisible" -->
+        <app-sidebar 
+        [visible]="sidebarVisible"
+        (visibleChange)="sidebarVisible = $event"
+        (selectionChanged)="onFilterChange($event)"></app-sidebar>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <app-article-list-page></app-article-list-page>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+</div>
