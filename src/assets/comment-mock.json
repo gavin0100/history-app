@@ -1,0 +1,276 @@
+[
+    {
+        "id": "cmt-001",
+        "articleId": "bf661f92",
+        "author": {
+            "id": "usr-001",
+            "name": "Phạm Văn Minh",
+            "avatar": "https://i.pravatar.cc/150?img=10",
+            "role": "Nông dân"
+        },
+        "content": "Bài viết rất hay và chi tiết về lịch sử chăn nuôi lợn ở Việt Nam. Ông bà tôi cũng từng kể lại những khó khăn trong giai đoạn này.",
+        "createdDate": "2026-01-16T10:30:00Z",
+        "likes": 12,
+        "replies": [
+            {
+                "id": "cmt-001-reply-001",
+                "articleId": "bf661f92",
+                "author": {
+                    "id": "be9ae774",
+                    "name": "Nguyễn Văn A",
+                    "avatar": "https://i.pravatar.cc/150?img=1",
+                    "role": "Nghiên cứu viên lịch sử"
+                },
+                "content": "Cảm ơn bạn đã chia sẻ! Những câu chuyện từ thế hệ đi trước rất quý giá cho công tác nghiên cứu.",
+                "createdDate": "2026-01-16T14:20:00Z",
+                "likes": 5
+            }
+        ]
+    },
+    {
+        "id": "cmt-002",
+        "articleId": "bf661f92",
+        "author": {
+            "id": "usr-002",
+            "name": "Trần Thị Hoa",
+            "avatar": "https://i.pravatar.cc/150?img=11",
+            "role": "Giáo viên"
+        },
+        "content": "Tài liệu này rất hữu ích cho việc giảng dạy lịch sử nông nghiệp Việt Nam. Xin cảm ơn tác giả!",
+        "createdDate": "2026-01-17T08:15:00Z",
+        "likes": 8
+    },
+    {
+        "id": "cmt-003",
+        "articleId": "1dcd1ed7",
+        "author": {
+            "id": "usr-003",
+            "name": "Michael Brown",
+            "avatar": "https://i.pravatar.cc/150?img=12",
+            "role": "Industrial Engineer"
+        },
+        "content": "Excellent analysis of the American steel industry's golden age. The technological advancements during this period laid the foundation for modern manufacturing.",
+        "createdDate": "2026-01-21T11:45:00Z",
+        "likes": 23,
+        "replies": [
+            {
+                "id": "cmt-003-reply-001",
+                "articleId": "1dcd1ed7",
+                "author": {
+                    "id": "usr-004",
+                    "name": "David Wilson",
+                    "avatar": "https://i.pravatar.cc/150?img=13",
+                    "role": "Manufacturing Specialist"
+                },
+                "content": "I agree! My grandfather worked in a steel mill during this era. The stories he told about the innovation happening were fascinating.",
+                "createdDate": "2026-01-21T15:30:00Z",
+                "likes": 7
+            }
+        ]
+    },
+    {
+        "id": "cmt-004",
+        "articleId": "1dcd1ed7",
+        "author": {
+            "id": "usr-005",
+            "name": "Jennifer Taylor",
+            "avatar": "https://i.pravatar.cc/150?img=14",
+            "role": "Economic Historian"
+        },
+        "content": "Would love to see more details about the economic impact on local communities during this period.",
+        "createdDate": "2026-01-22T09:20:00Z",
+        "likes": 15
+    },
+    {
+        "id": "cmt-005",
+        "articleId": "2cb01626",
+        "author": {
+            "id": "usr-006",
+            "name": "鈴木健太",
+            "avatar": "https://i.pravatar.cc/150?img=15",
+            "role": "自動車エンジニア"
+        },
+        "content": "トヨタ生産方式の歴史について素晴らしい記事です。当時の革新的なアプローチは今でも世界中で使われています。",
+        "createdDate": "2026-01-26T07:30:00Z",
+        "likes": 34,
+        "replies": [
+            {
+                "id": "cmt-005-reply-001",
+                "articleId": "2cb01626",
+                "author": {
+                    "id": "621b2f68",
+                    "name": "田中太郎",
+                    "avatar": "https://i.pravatar.cc/150?img=3",
+                    "role": "Automotive Industry Expert"
+                },
+                "content": "ありがとうございます！トヨタの製造革新は日本の産業発展における重要な転換点でした。",
+                "createdDate": "2026-01-26T10:15:00Z",
+                "likes": 12
+            },
+            {
+                "id": "cmt-005-reply-002",
+                "articleId": "2cb01626",
+                "author": {
+                    "id": "usr-007",
+                    "name": "中村美咲",
+                    "avatar": "https://i.pravatar.cc/150?img=16",
+                    "role": "品質管理専門家"
+                },
+                "content": "カンバン方式について詳しく知りたいです。続編を期待しています！",
+                "createdDate": "2026-01-26T13:45:00Z",
+                "likes": 8
+            }
+        ]
+    },
+    {
+        "id": "cmt-006",
+        "articleId": "0bd4223e",
+        "author": {
+            "id": "usr-008",
+            "name": "Alex Chen",
+            "avatar": "https://i.pravatar.cc/150?img=17",
+            "role": "Software Developer"
+        },
+        "content": "The dot-com boom was an incredible time for innovation. This article captures the excitement and challenges of that era perfectly.",
+        "createdDate": "2026-02-02T10:00:00Z",
+        "likes": 45,
+        "replies": [
+            {
+                "id": "cmt-006-reply-001",
+                "articleId": "0bd4223e",
+                "author": {
+                    "id": "c787ff71",
+                    "name": "Sarah Johnson",
+                    "avatar": "https://i.pravatar.cc/150?img=5",
+                    "role": "Tech Industry Analyst"
+                },
+                "content": "Thank you! I tried to balance the enthusiasm of the era with the lessons learned from the subsequent crash.",
+                "createdDate": "2026-02-02T14:30:00Z",
+                "likes": 18
+            }
+        ]
+    },
+    {
+        "id": "cmt-007",
+        "articleId": "0bd4223e",
+        "author": {
+            "id": "usr-009",
+            "name": "Linda Martinez",
+            "avatar": "https://i.pravatar.cc/150?img=18",
+            "role": "Venture Capitalist"
+        },
+        "content": "As someone who invested during this period, this brings back a lot of memories - both good and bad! Great historical perspective.",
+        "createdDate": "2026-02-02T16:45:00Z",
+        "likes": 29
+    },
+    {
+        "id": "cmt-008",
+        "articleId": "48238c8d",
+        "author": {
+            "id": "usr-010",
+            "name": "Lê Thị Mai",
+            "avatar": "https://i.pravatar.cc/150?img=19",
+            "role": "Công nhân dệt may"
+        },
+        "content": "Mẹ tôi đã làm việc trong ngành dệt may từ những năm 1965. Bà thường kể về những ngày tháng khó khăn nhưng cũng đầy tự hào.",
+        "createdDate": "2026-01-28T15:20:00Z",
+        "likes": 11
+    },
+    {
+        "id": "cmt-009",
+        "articleId": "7d374ab1",
+        "author": {
+            "id": "usr-011",
+            "name": "高橋誠",
+            "avatar": "https://i.pravatar.cc/150?img=20",
+            "role": "バイク愛好家"
+        },
+        "content": "ホンダの成功物語は感動的です。私も1960年代のクラシックバイクを収集しています。",
+        "createdDate": "2026-02-02T18:30:00Z",
+        "likes": 27,
+        "replies": [
+            {
+                "id": "cmt-009-reply-001",
+                "articleId": "7d374ab1",
+                "author": {
+                    "id": "bd4d3b1f",
+                    "name": "佐藤花子",
+                    "avatar": "https://i.pravatar.cc/150?img=6",
+                    "role": "Motorcycle Industry Historian"
+                },
+                "content": "素晴らしいですね！1960年代のホンダのモデルは今でもコレクターの間で人気があります。",
+                "createdDate": "2026-02-03T09:15:00Z",
+                "likes": 9
+            }
+        ]
+    },
+    {
+        "id": "cmt-010",
+        "articleId": "i5j6k7l8",
+        "author": {
+            "id": "usr-012",
+            "name": "Nguyễn Hoàng Long",
+            "avatar": "https://i.pravatar.cc/150?img=21",
+            "role": "Kỹ sư nông nghiệp"
+        },
+        "content": "Công nghệ cao trong nông nghiệp thực sự đang thay đổi ngành của chúng ta. Bài viết này cung cấp cái nhìn tổng quan tuyệt vời.",
+        "createdDate": "2026-01-22T11:00:00Z",
+        "likes": 19,
+        "replies": [
+            {
+                "id": "cmt-010-reply-001",
+                "articleId": "i5j6k7l8",
+                "author": {
+                    "id": "845fd206",
+                    "name": "Lê Văn C",
+                    "avatar": "https://i.pravatar.cc/150?img=7",
+                    "role": "Nhà nghiên cứu nông nghiệp"
+                },
+                "content": "Cảm ơn! Tôi tin rằng công nghệ cao sẽ là chìa khóa cho sự phát triển bền vững của nông nghiệp Việt Nam.",
+                "createdDate": "2026-01-22T14:30:00Z",
+                "likes": 10
+            }
+        ]
+    },
+    {
+        "id": "cmt-011",
+        "articleId": "01d2f342",
+        "author": {
+            "id": "usr-013",
+            "name": "渡辺優子",
+            "avatar": "https://i.pravatar.cc/150?img=22",
+            "role": "音楽愛好家"
+        },
+        "content": "ウォークマンは私の青春時代の象徴です。この記事を読んで、たくさんの思い出がよみがえりました。",
+        "createdDate": "2026-01-31T12:30:00Z",
+        "likes": 38
+    },
+    {
+        "id": "cmt-012",
+        "articleId": "q3r4s5t6",
+        "author": {
+            "id": "usr-014",
+            "name": "Võ Văn Tùng",
+            "avatar": "https://i.pravatar.cc/150?img=23",
+            "role": "Cựu công nhân"
+        },
+        "content": "Tôi đã làm việc trong một nhà máy sản xuất từ năm 1978. Thời kỳ tái thiết sau thống nhất thực sự là thời kỳ đầy thách thức.",
+        "createdDate": "2026-01-27T09:45:00Z",
+        "likes": 16,
+        "replies": [
+            {
+                "id": "cmt-012-reply-001",
+                "articleId": "q3r4s5t6",
+                "author": {
+                    "id": "usr-015",
+                    "name": "Đặng Thị Lan",
+                    "avatar": "https://i.pravatar.cc/150?img=24",
+                    "role": "Nhà sử học"
+                },
+                "content": "Câu chuyện của bạn rất quý giá. Có thể bạn chia sẻ thêm về trải nghiệm của mình không?",
+                "createdDate": "2026-01-27T13:20:00Z",
+                "likes": 6
+            }
+        ]
+    }
+]

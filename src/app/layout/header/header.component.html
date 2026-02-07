@@ -2,34 +2,56 @@
     <div class="flex items-center justify-between">
         <!-- Left side: Menu button and Breadcrumb -->
         <div class="flex items-center gap-4">
-            <p-button 
-                (click)="onMenuClick()" 
-                icon="pi pi-bars" 
-                [text]="true" 
-                [rounded]="true"
-                severity="secondary">
+            <p-button (click)="onMenuClick()" icon="pi pi-bars" [text]="true" [rounded]="true" severity="secondary">
             </p-button>
-            
-            <p-breadcrumb 
-                [model]="breadcrumbItems" 
-                [home]="home">
-            </p-breadcrumb>
         </div>
 
         <!-- Right side: Optional actions -->
         <div class="flex items-center gap-2">
-            <p-button 
-                icon="pi pi-bell" 
-                [text]="true" 
-                [rounded]="true"
+            <p-button icon="pi pi-bell" [text]="true" [rounded]="true" severity="secondary">
+            </p-button>
+            <p-button (click)="onUserClick($event)" icon="pi pi-user" [text]="true" [rounded]="true"
                 severity="secondary">
             </p-button>
-            <p-button 
-                icon="pi pi-user" 
-                [text]="true" 
-                [rounded]="true"
-                severity="secondary">
-            </p-button>
+
+            <!-- User Menu Popover -->
+            <p-popover #userMenu>
+                <div class="flex flex-col gap-3 w-72 p-2">
+                    <!-- Account Info Section -->
+                    <div class="flex items-center gap-3 pb-3 border-b">
+                        <div class="bg-gray-200 rounded-full p-3">
+                            <i class="pi pi-user text-2xl"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-semibold">{{ userInfo.name }}</span>
+                            <span class="text-sm text-gray-600">{{ userInfo.email }}</span>
+                        </div>
+                    </div>
+
+                    <!-- Appearance Section -->
+                    <div class="flex flex-col gap-2">
+                        <span class="text-sm font-semibold text-gray-700">Appearance</span>
+                        <div class="flex gap-2">
+                            <p-button label="Light" icon="pi pi-sun" [outlined]="true" size="small"
+                                (click)="onChangeAppearance('light')" styleClass="flex-1">
+                            </p-button>
+                            <p-button label="Dark" icon="pi pi-moon" [outlined]="true" size="small"
+                                (click)="onChangeAppearance('dark')" styleClass="flex-1">
+                            </p-button>
+                        </div>
+                    </div>
+
+                    <!-- Actions Section -->
+                    <div class="flex flex-col gap-2 pt-2 border-t">
+                        <p-button label="Account Settings" icon="pi pi-cog" [text]="true" severity="secondary"
+                            styleClass="w-full justify-start">
+                        </p-button>
+                        <p-button label="Logout" icon="pi pi-sign-out" [text]="true" severity="danger"
+                            (click)="onLogout()" styleClass="w-full justify-start">
+                        </p-button>
+                    </div>
+                </div>
+            </p-popover>
         </div>
     </div>
 </header>
